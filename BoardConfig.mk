@@ -34,8 +34,12 @@ BOARD_QTI_CAMERA_32BIT_ONLY := true
 TARGET_SCREEN_DENSITY := 560
 
 # Kernel
+TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_CONFIG := nb1_defconfig
+TARGET_KERNEL_SOURCE := kernel/nokia/nb1-a11
 TARGET_KERNEL_VERSION := 4.4
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := $(shell pwd)/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-
+TARGET_KERNEL_CROSS_COMPILE_ARM32_PREFIX := $(shell pwd)/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-
 
 # Shims
 TARGET_LD_SHIM_LIBS := \
