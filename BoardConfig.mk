@@ -41,8 +41,8 @@ TARGET_RECOVERY_DEVICE_MODULES := libinit_nb1
 TARGET_KERNEL_CONFIG := nb1_defconfig
 TARGET_KERNEL_SOURCE := kernel/nokia/nb1-a11
 TARGET_KERNEL_VERSION := 4.4
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := $(shell pwd)/kernel/nokia/nb1-a11/toolchain/aarch64-elf-gcc/bin/aarch64-elf-
-TARGET_KERNEL_CROSS_COMPILE_ARM32_PREFIX := $(shell pwd)/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := $(shell pwd)/kernel/nokia/nb1-a11/compiler/gcc-arm-10.2-2020.11-x86_64-aarch64-none-elf/bin/aarch64-none-elf-
+TARGET_KERNEL_CROSS_COMPILE_ARM32_PREFIX := $(shell pwd)/kernel/nokia/nb1-a11/compiler/gcc-arm-none-eabi-10-2020-q4-major-x86_64-linux/gcc-arm-none-eabi-10-2020-q4-major/bin/arm-none-eabi-
 
 # Shims
 TARGET_LD_SHIM_LIBS := \
