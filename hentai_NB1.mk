@@ -19,12 +19,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/hentai/config/common_telephony.mk)
 
 # Inherit from NB1 device
 $(call inherit-product, device/nokia/NB1/device.mk)
 
-PRODUCT_NAME := lineage_NB1
+PRODUCT_NAME := hentai_NB1
 PRODUCT_DEVICE := NB1
 PRODUCT_MANUFACTURER := HMD Global
 PRODUCT_BRAND := Nokia
